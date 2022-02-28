@@ -1,0 +1,78 @@
+/*
+
+The purpose of this program is to quickly show the name of the 
+month based on the number provided. It's useful for quick calculation
+and can serve as a reminder as well
+ */
+
+//switch statement is a multiple alternative decision tree
+
+import java.util.Scanner;
+
+public class switchStatement {
+    public static void main(String[] args) {
+        int month;
+
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.println("Enter a month number: ");
+        month = keyboard.nextInt();
+
+        switch(month)
+        {
+            case 1:
+                System.out.println("January");
+                break;
+
+            case 2:
+                System.out.println("February");
+                break;
+
+            case 3:
+                System.out.println("March");
+                break;
+
+            case 4:
+                System.out.println("April");
+                break;
+
+            case 5:
+                System.out.println("May");
+                break;
+
+            case 6:
+                System.out.println("June");
+                break;
+
+            case 7:
+                System.out.println("July");
+                break;
+
+            case 8:
+                System.out.println("August");
+                break;
+
+            case 9:
+                System.out.println("September");
+                break;
+
+            case 10:
+                System.out.println("October");
+                break;
+
+            case 11:
+                System.out.println("November");
+                break;
+
+            case 12:
+                System.out.println("December");
+                break;
+
+            default:
+                System.out.println("Error: Invalid month");
+                break;
+        }
+
+    }
+
+}
