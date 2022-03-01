@@ -2,6 +2,7 @@
 The purpose of this program is to take an input number between 1 and 100,
 check if it matches the number the computer randomly selected,
 and make the user guess within ten tries.
+It is a good practice for Binary Search Algorithm!
  */
 
 
