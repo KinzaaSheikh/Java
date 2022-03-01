@@ -1,0 +1,45 @@
+/*
+The purpose of this program is to take an input number between 1 and 100,
+check if it matches the number the computer randomly selected,
+and make the user guess within ten tries.
+ */
+
+
+import java.util.Scanner;
+
+public class NumberGame {
+
+    public static void main(String[] args) {
+        int randomNumber = (int) (Math.random() * 100) + 1;
+        boolean hasWon = false;
+        System.out.println("I have randomly selected a number between 1 and 100.");
+        System.out.println("Try guessing it: ");
+
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 10; i > 0; i--) {
+            System.out.println("You have " + i + " guesses left. Try again:");
+            int guess = scanner.nextInt();
+
+            if (randomNumber < guess) {
+                System.out.println("The actual number is smaller than " + guess + ".");
+            } else if (randomNumber > guess) {
+                System.out.println("The actual number is larger than " + guess + ".");
+            } else {
+                hasWon = true;
+                break;
+            }
+        }
+            if (hasWon) {
+                System.out.println("You won!");
+            }
+
+            else{
+                System.out.println("You ran out of number of guesses");
+                System.out.println("The actual number was: " + randomNumber);
+            }
+        }
+        
+    }
+
+
