@@ -1,0 +1,20 @@
+public class Formatted {
+
+    public static void main(String[] args) {
+        double sales = 12345.67;
+        System.out.printf("Our sales are %f for the day.\n", sales);
+        //%f is format specifier for floating point numbers
+
+        double temp1 = 72.5, temp2 = 83.7;
+        System.out.printf("The temperature are %f and %f degrees.\n", temp1, temp2);
+        
+        int hours= 40;
+        System.out.printf("I worked %d hours this week.\n", hours);
+        //%d is used for decimal integers
+    }
+}
+
+/*
+FormatString is a string that contains special text
+ArgumentList is a list of additional arguments, can be 0
+*/
