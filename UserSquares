@@ -1,0 +1,27 @@
+import java.util.Scanner;
+/*
+the purpose of this class is to print out squares of numbers,
+The maximum number is taken by user input and it will display both
+the number and its square
+ */
+public class UserSquares {
+    public static void main(String[] args) {
+        int number;
+        int maxValue;
+
+        System.out.println("I will display a table of number and their squares.");
+
+        //Create a scanner class to get keyboard input
+        Scanner keyboard = new Scanner(System.in);
+
+        //Get the value that should be displayed
+        System.out.print("Suggest the maximum number? ");
+        maxValue = keyboard.nextInt();
+
+        //this will display the table
+        System.out.println("Number Number Squared");
+        for(number=1; number <= maxValue; number++){
+            System.out.println(number + "\t\t" + number *number);
+        }
+    }
+}
