@@ -1,0 +1,35 @@
+import javax.swing.JOptionPane;
+/**
+ * the purpose of this program is to teach more about the concept
+ * of accumulate through a sales record program
+ */
+
+public class Sales {
+    public static void main(String[] args) {
+        int days;
+        double sales;
+        double totalSales; //this variable will accumulate the data
+        String input;
+
+        input = JOptionPane.showInputDialog("For how many days " +
+                "do you have sales figures?");
+        days = Integer.parseInt(input);
+
+        //the accumulator will start at zero
+        totalSales = 0.0;
+
+        //calculate through a for loop
+        for(int count = 1; count <= days; count++){
+            input = JOptionPane.showInputDialog("Enter the sales" +
+                    "for day " + count + ":");
+            sales = Double.parseDouble(input);
+            totalSales += sales;
+        }
+
+        //this dialog is to display the total
+        JOptionPane.showMessageDialog(null,
+                String.format("The total sales are $%,.2f", totalSales));
+
+        System.exit(0);
+    }
+}
